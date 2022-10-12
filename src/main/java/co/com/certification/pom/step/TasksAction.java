@@ -105,7 +105,7 @@ public class TasksAction {
         }
 
     }
-
+// Reporte de selenium gradle clean test aggregate -Dtas=@caso1
 
 }
 
