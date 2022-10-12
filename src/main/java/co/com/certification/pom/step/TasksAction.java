@@ -1,7 +1,6 @@
 package co.com.certification.pom.step;
 
-import co.com.certification.pom.pageobjetc.PaginaUrl;
-import co.com.certification.pom.pageobjetc.ValidForms;
+import co.com.certification.pom.pageobjetc.*;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import org.fluentlenium.core.wait.FluentWait;
@@ -18,7 +17,10 @@ public class TasksAction {
 
 
     private PaginaUrl paginaUrl;
+    private Login_colorlib loginColorlib;
     private ValidForms validForms;
+    private Home_colorlib homeColorlib;
+    private Popup_Validation_colorlib popupValidationColorlib;
 
 
     @Step
@@ -28,53 +30,53 @@ public class TasksAction {
 
     @Step
     public void singIn() throws InterruptedException {
-        paginaUrl.user.sendKeys("@jhonfquinonesa");
-        paginaUrl.pass.sendKeys("@123456");
-        paginaUrl.btn_sing_in.click();
+        loginColorlib.user.sendKeys("@jhonfquinonesa");
+        loginColorlib.pass.sendKeys("@123456");
+        loginColorlib.btn_sing_in.click();
     }
 
     @Step
     public void Verificar() throws InterruptedException {
-        assertThat(paginaUrl.lbl_menu.isCurrentlyVisible(), is(true));
+        assertThat(homeColorlib.lbl_menu.isCurrentlyVisible(), is(true));
     }
 
     @Step
     public void FunBlockValid() throws InterruptedException {
-        paginaUrl.Forms.click();
-        paginaUrl.FormsValid.click();
+        homeColorlib.Forms.click();
+        homeColorlib.FormsValid.click();
     }
 
     @Step
     public void verificationform() throws InterruptedException {
-        assertThat(paginaUrl.Verification.isCurrentlyVisible(), is(true));
+        assertThat(popupValidationColorlib.Verification.isCurrentlyVisible(), is(true));
     }
 
     @Step
     public void DiligenciarFormulario() throws InterruptedException {
-        paginaUrl.Required.sendKeys("Aloha");
-        paginaUrl.Select.selectByIndex(2);
-        paginaUrl.MultSelect.selectByIndex(3);
-        paginaUrl.Url1.clear();
-        paginaUrl.Url1.sendKeys("https://colorlib.com");
-        paginaUrl.Email.sendKeys("Test@gmail.com");
-        paginaUrl.Password.sendKeys("654321");
-        paginaUrl.ConfPassword.sendKeys("654321");
-        paginaUrl.Minimum.sendKeys("");
-        paginaUrl.Maximum.clear();
-        paginaUrl.Maximum.sendKeys("654321");
-        paginaUrl.Number.clear();
-        paginaUrl.Number.sendKeys("100.1");
-        paginaUrl.IP.clear();
-        paginaUrl.IP.sendKeys("172.20.10.23");
-        paginaUrl.date.clear();
-        paginaUrl.date.sendKeys("2020-10-05");
-        paginaUrl.DateEarlier.clear();
-        paginaUrl.DateEarlier.sendKeys("2012/09/13");
+        popupValidationColorlib.Required.sendKeys("Aloha");
+        popupValidationColorlib.Select.selectByIndex(2);
+        popupValidationColorlib.MultSelect.selectByIndex(3);
+        popupValidationColorlib.Url1.clear();
+        popupValidationColorlib.Url1.sendKeys("https://colorlib.com");
+        popupValidationColorlib.Email.sendKeys("Test@gmail.com");
+        popupValidationColorlib.Password.sendKeys("654321");
+        popupValidationColorlib.ConfPassword.sendKeys("654321");
+        popupValidationColorlib.Minimum.sendKeys("");
+        popupValidationColorlib.Maximum.clear();
+        popupValidationColorlib.Maximum.sendKeys("654321");
+        popupValidationColorlib.Number.clear();
+        popupValidationColorlib.Number.sendKeys("100.1");
+        popupValidationColorlib.IP.clear();
+        popupValidationColorlib.IP.sendKeys("172.20.10.23");
+        popupValidationColorlib.date.clear();
+        popupValidationColorlib.date.sendKeys("2020-10-05");
+        popupValidationColorlib.DateEarlier.clear();
+        popupValidationColorlib.DateEarlier.sendKeys("2012/09/13");
     }
 
     @Step
     public void clicvalidar() throws InterruptedException {
-        paginaUrl.validation.click();
+        popupValidationColorlib.validation.click();
     }
 
     @Step
