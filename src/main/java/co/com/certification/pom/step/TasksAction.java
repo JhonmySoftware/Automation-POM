@@ -52,6 +52,11 @@ public class TasksAction {
     }
 
     @Step
+    public void validationInline() throws InterruptedException {
+        assertThat(popupValidationColorlib.validationInline.isCurrentlyVisible(), is(true));
+    }
+
+    @Step
     public void DiligenciarFormulario() throws InterruptedException {
         popupValidationColorlib.Required.sendKeys("Aloha");
         popupValidationColorlib.Select.selectByIndex(2);
@@ -72,6 +77,11 @@ public class TasksAction {
         popupValidationColorlib.date.sendKeys("2020-10-05");
         popupValidationColorlib.DateEarlier.clear();
         popupValidationColorlib.DateEarlier.sendKeys("2012/09/13");
+    }
+
+    @Step
+    public void DiligenciarInline () throws InterruptedException {
+
     }
 
     @Step

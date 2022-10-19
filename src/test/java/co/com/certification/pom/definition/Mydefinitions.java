@@ -52,5 +52,28 @@ public class Mydefinitions {
         tasksAction.validForms();
     }
 
+    // two challenge
 
+    @Given("^I enter with my credentials in colorlib$")
+    public void iEnterWithMyCredentialsInColorlib() throws InterruptedException {
+        tasksAction.appUrl();
+        tasksAction.singIn();
+
+    }
+
+    @When("^I proceed with the authentication correct$")
+    public void iProceedWithTheAuthenticationCorrect() throws InterruptedException {
+        tasksAction.Verificar();
+        tasksAction.FunBlockValid();
+        tasksAction.validationInline();
+    }
+
+    @And("^verify diligently correct$")
+    public void verifyDiligentlyCorrect() {
+    }
+
+    @Then("^Check validation message for each field$")
+    public void checkValidationMessageForEachField() {
+
+    }
 }

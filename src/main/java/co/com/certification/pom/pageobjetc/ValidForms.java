@@ -47,4 +47,41 @@ public class ValidForms extends PageObject {
     @FindBy(xpath = "//*[@id=\"popup-validation\"]/div[13]/div/div/div[1]")
     public WebElementFacade DateEarlierv;
 
+
+    // two challenge
+    @FindBy(id = "required")
+    public WebElementFacade Requiredin;
+
+    @FindBy(id = "email")
+    public WebElementFacade Emailin;
+
+    @FindBy(id = "password")
+    public WebElementFacade Passwordin;
+
+    @FindBy(id = "confirm_password")
+    public WebElementFacade ConfPasswordin;
+
+    @FindBy(id = "date")
+    public WebElementFacade Datein;
+
+    @FindBy(id = "url")
+    public WebElementFacade Urlin;
+
+    @FindBy(id = "agree")
+    public WebElementFacade Agreein;
+
+    @FindBy(id = "minsize")
+    public WebElementFacade minsizein;
+
+    @FindBy(id = "maxsize")
+    public WebElementFacade maxsizein;
+
+    @FindBy(id = "minNum")
+    public WebElementFacade minNumin;
+
+    @FindBy(id = "maxNum")
+    public WebElementFacade maxNumin;
+
+    @FindBy(id = "Validate")
+    public WebElementFacade Validatein;
 }

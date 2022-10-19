@@ -51,4 +51,6 @@ public class Popup_Validation_colorlib extends PageObject {
     @FindBy(xpath = "//*[@id=\"popup-validation\"]/div[14]/input")
     public WebElementFacade validation;
 
+    @FindBy(xpath = "//*[@id=\"collapse3\"]")
+    public WebElementFacade validationInline;
 }
