@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verify login session for colorlib page" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-13T01:37:13" hostname="CHBOGPF34MNC5" time="37.89">
+  <properties/>
+  <testcase name="Verify correct login" classname="Verify login session for colorlib page" time="37.89"/>
+  <system-out><![CDATA[Validación del campo ValidForms.Requiredv correcta: 
+Validación del campo ValidForms.Selectv correcta: 
+Validación del campo ValidForms.MultSelectv correcta: 
+Validación del campo ValidForms.Url1v correcta: 
+Validación del campo ValidForms.Emailv correcta: 
+Validación del campo ValidForms.Passwordv correcta: 
+Validación del campo ValidForms.ConfPasswordv correcta: 
+Validar el campo: ValidForms.Minimumv
+Validación del campo ValidForms.Maximumv correcta: 
+Validación del campo ValidForms.Numberv correcta: 
+Validación del campo ValidForms.IPv correcta: 
+Validación del campo ValidForms.datev correcta: 
+Validación del campo ValidForms.DateEarlierv correcta: 
+]]></system-out>
+  <system-err><![CDATA[dic 12, 2022 8:37:14 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 11763
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+dic 12, 2022 8:37:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Verify correct login
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>
