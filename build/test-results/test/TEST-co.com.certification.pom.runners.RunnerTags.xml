@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 8 Steps (?[32m8 passed?[0m)
-0m32,246s
+0m40,245s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.serenitybdd.core.Serenity - ?[36m

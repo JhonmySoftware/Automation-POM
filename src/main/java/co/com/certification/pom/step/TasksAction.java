@@ -115,8 +115,8 @@ public class TasksAction {
                 System.out.println("Validación del campo " + i + " correcta: ");
             }
         }
-
     }
+
 // Reporte de selenium gradle clean test aggregate -Dtas=@caso1
 
 }
