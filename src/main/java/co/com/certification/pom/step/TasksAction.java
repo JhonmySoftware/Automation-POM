@@ -66,7 +66,7 @@ public class TasksAction {
         popupValidationColorlib.Email.sendKeys("Test@gmail.com");
         popupValidationColorlib.Password.sendKeys("654321");
         popupValidationColorlib.ConfPassword.sendKeys("654321");
-        popupValidationColorlib.Minimum.sendKeys("");
+        popupValidationColorlib.Minimum.sendKeys("Diligenciado");
         popupValidationColorlib.Maximum.clear();
         popupValidationColorlib.Maximum.sendKeys("654321");
         popupValidationColorlib.Number.clear();
@@ -118,7 +118,7 @@ public class TasksAction {
     }
 
        // Reporte de selenium gradle clean test aggregate -Dtas=@caso
-    // Cambio para ver reflejado en el github
+
 
 }
 
