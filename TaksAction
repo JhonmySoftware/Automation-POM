@@ -1,0 +1,20 @@
+[33mcommit bb337eb200ec47246e7c4f3868694f85abb06368[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: jhonmydanc@gmail.com <Puli0010>
+Date:   Tue Dec 13 19:22:05 2022 -0500
+
+    test
+
+[1mdiff --git a/src/main/java/co/com/certification/pom/step/TasksAction.java b/src/main/java/co/com/certification/pom/step/TasksAction.java[m
+[1mindex c8567c6..8c270da 100644[m
+[1m--- a/src/main/java/co/com/certification/pom/step/TasksAction.java[m
+[1m+++ b/src/main/java/co/com/certification/pom/step/TasksAction.java[m
+[36m@@ -117,7 +117,8 @@[m [mpublic class TasksAction {[m
+         }[m
+     }[m
+ [m
+[31m-// Reporte de selenium gradle clean test aggregate -Dtas=@caso1[m
+[32m+[m[32m       // Reporte de selenium gradle clean test aggregate -Dtas=@caso1[m
+[32m+[m[32m    // TEST[m
+ [m
+ }[m
+ [m
