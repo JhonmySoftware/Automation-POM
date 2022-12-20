@@ -18,8 +18,8 @@ Feature: Verify login session for colorlib page
       | MultSelect    | Footbal                  |
       | Url1v         | https://colorlib.com     |
       | Emailv        | jhonmytestdanc@gmail.com |
-      | Passwordv     | BlackPanther             |
-      | ConfPasswordv | BlackPanther             |
+      | Passwordv     | test                     |
+      | ConfPasswordv | test                     |
       | Minimumv      | 321654                   |
       | Maximumv      | 13132                    |
       | Numberv       | 100.1                    |
