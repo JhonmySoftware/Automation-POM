@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 8 Steps (?[32m8 passed?[0m)
-0m26,290s
+0m26,363s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.serenitybdd.core.Serenity - ?[36m
@@ -24,8 +24,8 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 ?[0m
-[Test worker] INFO net.serenitybdd.core.Serenity - Test Suite Started: Verify login session for colorlib page
 [Test worker] INFO net.serenitybdd.core.Serenity - Test Suite Started: Verify the completion of the “Inline Validation”. screen.
+[Test worker] INFO net.serenitybdd.core.Serenity - Test Suite Started: Verify login session for colorlib page
 [Test worker] INFO net.serenitybdd.core.Serenity - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 

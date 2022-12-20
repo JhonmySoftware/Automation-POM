@@ -1,13 +1,14 @@
 package co.com.certification.pom.step;
 
+
 import co.com.certification.pom.pageobjetc.*;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
-import org.fluentlenium.core.wait.FluentWait;
+
+
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -21,7 +22,6 @@ public class TasksAction {
     private ValidForms validForms;
     private Home_colorlib homeColorlib;
     private Popup_Validation_colorlib popupValidationColorlib;
-
 
     @Step
     public void appUrl() throws InterruptedException {
@@ -56,33 +56,14 @@ public class TasksAction {
         assertThat(popupValidationColorlib.validationInline.isCurrentlyVisible(), is(true));
     }
 
-    @Step
-    public void DiligenciarFormulario() throws InterruptedException {
-        popupValidationColorlib.Required.sendKeys("Aloha");
-        popupValidationColorlib.Select.selectByIndex(2);
-        popupValidationColorlib.MultSelect.selectByIndex(3);
-        popupValidationColorlib.Url1.clear();
-        popupValidationColorlib.Url1.sendKeys("https://colorlib.com");
-        popupValidationColorlib.Email.sendKeys("Test@gmail.com");
-        popupValidationColorlib.Password.sendKeys("654321");
-        popupValidationColorlib.ConfPassword.sendKeys("654321");
-        popupValidationColorlib.Minimum.sendKeys("Diligenciado");
-        popupValidationColorlib.Maximum.clear();
-        popupValidationColorlib.Maximum.sendKeys("654321");
-        popupValidationColorlib.Number.clear();
-        popupValidationColorlib.Number.sendKeys("100.1");
-        popupValidationColorlib.IP.clear();
-        popupValidationColorlib.IP.sendKeys("172.20.10.23");
-        popupValidationColorlib.date.clear();
-        popupValidationColorlib.date.sendKeys("2020-10-05");
-        popupValidationColorlib.DateEarlier.clear();
-        popupValidationColorlib.DateEarlier.sendKeys("2012/09/13");
-    }
-
-    @Step
-    public void DiligenciarInline () throws InterruptedException {
-
-    }
+//    @Step
+//    public void DiligenciarFormulario() throws InterruptedException {
+//
+//    }
+//
+//    @Step
+//    public void DiligenciarInline () throws InterruptedException {
+//    }
 
     @Step
     public void clicvalidar() throws InterruptedException {
@@ -112,7 +93,7 @@ public class TasksAction {
                 System.out.println("Validar el campo: " + i);
             } else {
                 assertThat(i.isCurrentlyVisible(), is(false));
-                System.out.println("Validación del campo " + i + " correcta: ");
+                System.out.println("Validación Correcta del campo: " + i );
             }
         }
     }
